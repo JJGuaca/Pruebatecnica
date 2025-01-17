@@ -1,0 +1,20 @@
+uuid: 3a7e9f6e-9d72-4b33-b865-7756ed8f1372
+langcode: es
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_telefono
+field_name: field_telefono
+entity_type: user
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

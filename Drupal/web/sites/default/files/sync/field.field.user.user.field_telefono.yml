@@ -1,0 +1,24 @@
+uuid: b5adb3e8-2c32-4fd5-bfe2-7194a5453f20
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_telefono
+  module:
+    - user
+id: user.user.field_telefono
+field_name: field_telefono
+entity_type: user
+bundle: user
+label: Telefono
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: 999999999
+  prefix: ''
+  suffix: ''
+field_type: integer

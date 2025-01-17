@@ -1,0 +1,30 @@
+
+<div class="container my-3 py-3">
+    <div class="row">
+        <div class="col-12">
+            <h3>Resultado del la consulta realizada</h3>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="table-responsive">
+                <table class="table table-hover table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Identificación</th>
+                            <th>Nombre</th>
+                            <th>correo electrónico</th>
+                            <th>Genero</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{ usuariosLista | json }}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+uuid: a91ab3ca-43f5-4fa0-b3b1-1dc3443bf19e
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.personas
+  module:
+    - user
+id: user_add_role_action.personas
+label: 'Añade el rol Personas al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: personas

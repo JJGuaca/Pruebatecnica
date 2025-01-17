@@ -1,0 +1,5 @@
+name: restapi
+type: module
+description: 'Un módulo personalizado para autenticación rest.'
+core_version_requirement: ^9 || ^10
+package: Custom

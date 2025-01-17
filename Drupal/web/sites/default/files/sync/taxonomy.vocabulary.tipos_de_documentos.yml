@@ -1,0 +1,9 @@
+uuid: 17e33b66-4ae6-49db-8409-07f52ba9b7a9
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipos de documentos'
+vid: tipos_de_documentos
+description: 'Tipos de documentos permitidos'
+weight: 0
+new_revision: false

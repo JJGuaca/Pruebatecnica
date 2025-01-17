@@ -1,0 +1,30 @@
+uuid: 7275cabc-9f4b-47e1-9bf0-178e6c560f02
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.user.compact
+    - field.field.user.user.field_direccion
+    - field.field.user.user.field_first_name
+    - field.field.user.user.field_last_name
+    - field.field.user.user.field_n_identificacion
+    - field.field.user.user.field_telefono
+    - field.field.user.user.field_tipo_de_documento
+  module:
+    - user
+_core:
+  default_config_hash: 00zr_RBdTjPjBGITD3h4c1ESQZimjdVCcHGt1trLqIY
+id: user.user.compact
+targetEntityType: user
+bundle: user
+mode: compact
+content: {  }
+hidden:
+  field_direccion: true
+  field_first_name: true
+  field_last_name: true
+  field_n_identificacion: true
+  field_telefono: true
+  field_tipo_de_documento: true
+  langcode: true
+  member_for: true

@@ -1,0 +1,17 @@
+uuid: a5a1cdc3-3b91-4bb4-964b-75aefeaf5b10
+langcode: es
+status: true
+dependencies:
+  module:
+    - rest_api_authentication
+    - serialization
+    - user
+id: user_registration
+plugin_id: user_registration
+granularity: method
+configuration:
+  POST:
+    supported_formats:
+      - json
+    supported_auth:
+      - rest_api_authentication

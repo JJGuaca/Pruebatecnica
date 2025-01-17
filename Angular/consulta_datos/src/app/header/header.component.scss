@@ -1,0 +1,64 @@
+.topbar{
+    background-color: #36c;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    p{
+        margin-bottom: unset;
+    }
+}
+.buscador{
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        form{
+            .btn{
+                color: #3B3B3B;
+                background-color: #FFFFFF;
+            }
+        }
+    }
+}
+.menu{
+    padding-left: unset;
+    padding-right: unset;
+    .navbar{
+        .container-fluid{
+            justify-content: flex-end;
+            .collapse{
+                .navbar-nav{
+                    margin: auto;
+                    .nav-item{
+                        .nav-link{
+                            text-transform: capitalize;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.breadcrumb{
+    nav{
+        ol.breadcrumb{
+            .breadcrumb-item{
+                a{
+                    pointer-events: auto;
+                }
+                &.active{
+                    a{
+                        pointer-events: none;
+                    }
+                }
+            }
+        }
+    }
+}

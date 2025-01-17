@@ -1,0 +1,101 @@
+.container-fluid{    
+    background-color: #36c;
+    display: flex;
+    align-items: center;
+    height: 96px;
+    overflow: hidden;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    p{
+        margin: unset;
+        a{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+.footer{
+    padding: 0rem 1rem 1rem;
+    background: linear-gradient(to bottom,#fff 25%,#36c 25%,#36c 100%);
+    .container{
+        border: 1px solid #80808047;
+        border-radius: 4px;
+        background-color: #fff;
+        padding: 2rem;
+        .row{
+            .col-12{
+                padding-left:unset;
+                padding-right: unset;
+            }
+            .redes-sociales{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-content: center;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+                margin-top: 1rem;
+                margin-bottom: 0.2rem;            
+            }
+            .politicas{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-content: center;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+                margin-top: 0.2rem;
+                margin-bottom: 1rem;
+                .politicas-internas{
+                    transition: all 0.3s ease-in-out;
+                    &:hover{
+                        text-shadow: 1px 1px 2px #1a2e45;
+                    }
+                }
+            }
+            .redes-sociales-internas{
+                font-size: 2rem;
+                color: #36c;
+                text-decoration: unset;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-content: center;
+                justify-content: center;
+                align-items: center;
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    text-shadow: 1px 1px 2px #1a2e45;
+                }
+            }
+            .contenido{
+                .items-que-presta{
+                    margin-bottom: unset;
+                    .item-que-presta{
+                        list-style: none;
+                    }
+                }
+            }
+        }
+    }
+}
+.volver-arriba{
+    position: fixed;
+    bottom: 40px;
+    right: 0px;
+    .btn{
+        border-radius: 50%;
+        background-color: #fff;
+        font-size: 2rem;
+        padding: unset;
+        color: orange;
+    }
+}

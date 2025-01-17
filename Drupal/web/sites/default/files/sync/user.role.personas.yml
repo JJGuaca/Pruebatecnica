@@ -1,0 +1,14 @@
+uuid: d291aca4-6077-419c-8a86-9c2ad5847b70
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.restricted_html
+  module:
+    - filter
+id: personas
+label: Personas
+weight: 4
+is_admin: null
+permissions:
+  - 'use text format restricted_html'

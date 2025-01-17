@@ -1,0 +1,11 @@
+uuid: 48635169-4228-45c1-adfb-a7e45b80240e
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipos_de_documentos
+id: taxonomy_term.tipos_de_documentos
+target_entity_type_id: taxonomy_term
+target_bundle: tipos_de_documentos
+default_langcode: site_default
+language_alterable: false

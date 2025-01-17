@@ -1,0 +1,5 @@
+name: 'restapi'
+type: module
+description: 'Modulo de peticiones'
+package: Custom
+core_version_requirement: ^10 || ^11

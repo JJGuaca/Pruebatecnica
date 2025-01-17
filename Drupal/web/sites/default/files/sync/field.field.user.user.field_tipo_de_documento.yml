@@ -1,0 +1,30 @@
+uuid: 040b42c9-8ebc-4fec-af1e-7c9db258e379
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_tipo_de_documento
+    - taxonomy.vocabulary.tipos_de_documentos
+  module:
+    - user
+id: user.user.field_tipo_de_documento
+field_name: field_tipo_de_documento
+entity_type: user
+bundle: user
+label: 'Tipo de Documento'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tipos_de_documentos: tipos_de_documentos
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
