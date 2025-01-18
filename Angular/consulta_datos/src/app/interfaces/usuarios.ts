@@ -5,3 +5,8 @@ export interface Usuarios {
     gender:string,
     status:string,
 }
+export interface Datos{
+    [x: string]: any;
+    meta:[],
+    data:[]
+}

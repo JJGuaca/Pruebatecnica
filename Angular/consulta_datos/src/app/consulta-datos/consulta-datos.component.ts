@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
 import { UsuariosService } from '../services/usuarios.service';
-import { Usuarios } from '../interfaces/usuarios';
+import { Usuarios,Datos } from '../interfaces/usuarios';
 import { CommonModule } from '@angular/common'; 
-
 
 @Component({
   selector: 'app-consulta-datos',
@@ -12,33 +11,29 @@ import { CommonModule } from '@angular/common';
   styleUrl: './consulta-datos.component.scss'
 })
 export class ConsultaDatosComponent {
-  usuariosLista: Usuarios[]=[];
-  data = [];
-  meta = [];
-  
   API_BASE_URL:string='https://gorest.co.in/public/v1/users';
+  usuariosLista: Usuarios[]=[];
+  NusuariosLista: Usuarios[]=[];
+  dataLista: Datos[]=[];
+  
+  
   constructor(private usuariosService:UsuariosService){}
   
 
   ngOnInit(): void {
     this.getUsuarios();
-    
-    // Convirtiendo a un arreglo de pares clave-valor
-    const entradas = Object.entries(this.usuariosLista);
-
-    // Iterando sobre el arreglo
-    entradas.forEach(([clave, valor]) => {
-      console.log(clave, valor);
-    });
-
-    // Utilizando Lodash
-    // const valores = values(this.usuariosLista);
-    // console.log(valores);
   }
   getUsuarios(){
     this.usuariosService.getUsuarios().subscribe({
       next:(result) =>{
-        this.usuariosLista = result;
+        this.dataLista = result;
+        const entradas = Object.entries(this.dataLista);  
+        const data =entradas[1];
+        const registros = data[1];
+        for(let i =0; i<registros['length'];i++){
+          this.usuariosLista.push(registros[i]); 
+          this.NusuariosLista.push(this.usuariosLista[i]);
+        }        
       },
       error: (error) =>{
         console.log(error);
